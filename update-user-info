@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMU Mentor - Profile Settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>PMU Mentor - Profile Settings</h1>
+    <form action="your_profile_update_page.php" method="post">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="current_password">Current Password:</label>
+        <input type="password" id="current_password" name="current_password" required>
+      </div>
+      <div class="form-group">
+        <label for="new_password">New Password (optional):</label>
+        <input type="password" id="new_password" name="new_password">
+      </div>
+      <div class="form-group">
+        <label for="confirm_password">Confirm New Password (optional):</label>
+        <input type="password" id="confirm_password" name="confirm_password">
+      </div>
+      <button type="submit">Update Profile</button>
+    </form>
+  </div>
+</body>
+</html>
