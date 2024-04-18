@@ -4,45 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PMU Mentor - Sign Up</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 20px;
-    }
-    label {
-      display: block;
-      margin-bottom: 5px;
-    }
-    input[type="text"],
-    input[type="email"],
-    input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      margin-bottom: 15px;
-    }
-    button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      width: 100%;
-    }
-  </style>
+  <link rel="stylesheet" href="design.css">
 </head>
 <body>
-  <h1>PMU Mentor - Log in/Sign Up</h1>
-  <form action="your_form_processing_page.php" method="post">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    <button type="submit">Create Account</button>
-  </form>
+  <div class="container">
+    <div class="logo">
+      <img src="pmu-logo.jpeg" alt="PMU Mentor Logo">
+    </div>
+    <form action="your_form_processing_page.php" method="post">
+      <h1>PMU Mentor</h1>
+      <p>Sign up to start your mentoring journey!</p>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Create Account</button>
+    </form>
+  </div>
 </body>
 </html>
